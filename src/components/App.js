@@ -1,22 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Header from 'components/Common/Header';
+import Jumbotron from 'components/Common/Jumbotron';
+import Home from 'components/Home';
 
-function App() {
+const routes = [{ url: '/home', component: Home }];
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Edit Appjs and save to reload.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Jumbotron />
+      <Switch>
+        {routes.map(route => (
+          <Route path={route.url} component={route.component} />
+        ))}
+        <Redirect to="/home" />
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
