@@ -1,9 +1,9 @@
 import React from 'react';
-import AboutList from './AboutList';
 import img1 from 'assets/img/about/1.jpg';
 import img2 from 'assets/img/about/2.jpg';
 import img3 from 'assets/img/about/3.jpg';
 import img4 from 'assets/img/about/4.jpg';
+import AboutList from './AboutList';
 
 const items = [
   {

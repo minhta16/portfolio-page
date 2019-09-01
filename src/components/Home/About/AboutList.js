@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import AboutItem from './AboutItem';
 
 class AboutList extends Component {
@@ -34,5 +35,9 @@ class AboutList extends Component {
     );
   }
 }
+
+AboutList.propTypes = {
+  items: PropTypes.array.isRequired,
+};
 
 export default AboutList;

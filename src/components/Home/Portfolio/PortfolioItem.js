@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class PortfolioItem extends Component {
   render() {
@@ -21,5 +22,18 @@ class PortfolioItem extends Component {
     );
   }
 }
+
+PortfolioItem.propTypes = {
+  onClick: PropTypes.func,
+  title: PropTypes.string,
+  caption: PropTypes.string,
+  src: PropTypes.object.isRequired,
+};
+
+PortfolioItem.defaultProps = {
+  onClick: () => {},
+  title: '',
+  caption: '',
+};
 
 export default PortfolioItem;

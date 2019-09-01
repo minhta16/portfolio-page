@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const AboutItem = props => {
   const { time, title, caption, inverted, src } = props;
@@ -18,6 +19,21 @@ const AboutItem = props => {
       </div>
     </li>
   );
+};
+
+AboutItem.propTypes = {
+  time: PropTypes.string,
+  title: PropTypes.string,
+  caption: PropTypes.string,
+  inverted: PropTypes.bool,
+  src: PropTypes.object.isRequired,
+};
+
+AboutItem.defaultProps = {
+  time: '',
+  title: '',
+  caption: '',
+  inverted: false,
 };
 
 export default AboutItem;
