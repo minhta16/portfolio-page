@@ -1,54 +1,21 @@
 import React, { Component } from 'react';
+import history from 'utils/history';
 
-const routes = [
+export const routes = [
   {
-    name: 'Portfolio',
+    name: 'Home',
+    path: '/home',
   },
   {
     name: 'About',
+    path: '/about',
   },
 ];
-
-const generateHeader = headerTop => (
-  <nav
-    className={`navbar navbar-expand-lg navbar-dark fixed-top ${!headerTop && 'navbar-shrink'}`}
-    ref="header"
-    id="mainNav"
-  >
-    <div className="container">
-      <a className="navbar-brand" href="#page-top">
-        The Amazing Spider Minh
-      </a>
-      <button
-        className="navbar-toggler navbar-toggler-right"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        Menu
-        <i className="fas fa-bars" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarResponsive">
-        <ul className="navbar-nav text-uppercase ml-auto">
-          {routes.map(route => (
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#services">
-                {route.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  </nav>
-);
 
 class Header extends Component {
   state = {
     headerTop: true,
+    path: undefined,
   };
 
   componentDidMount() {
@@ -59,6 +26,10 @@ class Header extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.calcScroll);
   }
+
+  onRedirect = path => () => {
+    history.push(path);
+  };
 
   calcScroll(h1) {
     const oldWindow = window;
@@ -81,7 +52,46 @@ class Header extends Component {
 
   render() {
     const { headerTop } = this.state;
-    return <fragment>{generateHeader(headerTop)}</fragment>;
+
+    return (
+      <React.Fragment>
+        <nav
+          className={`navbar navbar-expand-lg navbar-dark fixed-top ${!headerTop &&
+            'navbar-shrink'}`}
+          ref="header"
+          id="mainNav"
+        >
+          <div className="container">
+            <a className="navbar-brand" href="#page-top">
+              The Amazing Spider Minh
+            </a>
+            <button
+              className="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Menu
+              <i className="fas fa-bars" />
+            </button>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+              <ul className="navbar-nav text-uppercase ml-auto">
+                {routes.map(route => (
+                  <li key={route.name} className="nav-item">
+                    <a className="nav-link" onClick={this.onRedirect(route.path)}>
+                      {route.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </React.Fragment>
+    );
   }
 }
 

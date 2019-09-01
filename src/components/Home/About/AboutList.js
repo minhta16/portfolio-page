@@ -11,11 +11,12 @@ class AboutList extends Component {
           <ul className="timeline">
             {items.map((item, index) => (
               <AboutItem
+                key={item.title}
                 time={item.time}
                 title={item.title}
                 caption={item.caption}
                 src={item.src}
-                inverted={index % 2}
+                inverted={index % 2 === 0}
               />
             ))}
             <li className="timeline-inverted">

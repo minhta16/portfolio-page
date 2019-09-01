@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import img1 from 'assets/img/portfolio/01-thumbnail.jpg';
 import img2 from 'assets/img/portfolio/02-thumbnail.jpg';
 import img3 from 'assets/img/portfolio/03-thumbnail.jpg';
@@ -40,18 +40,24 @@ const portfolioList = [
   },
 ];
 
-const Portfolio = () => (
-  <section className="bg-light page-section" id="portfolio">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">Portfolio</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+class Portfolio extends Component {
+  render() {
+    return (
+      <section className="bg-light page-section" id="portfolio">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h2 className="section-heading text-uppercase">Portfolio</h2>
+              <h3 className="section-subheading text-muted">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+            </div>
+          </div>
+          <PortfolioList items={portfolioList} />
         </div>
-      </div>
-      <PortfolioList items={portfolioList} />
-    </div>
-  </section>
-);
+      </section>
+    );
+  }
+}
 
 export default Portfolio;

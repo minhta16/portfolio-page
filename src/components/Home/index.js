@@ -5,10 +5,10 @@ import About from './About';
 class Home extends Component {
   render() {
     return (
-      <fragment>
+      <React.Fragment>
         <Portfolio />
         <About />
-      </fragment>
+      </React.Fragment>
     );
   }
 }

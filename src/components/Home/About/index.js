@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import img1 from 'assets/img/about/1.jpg';
 import img2 from 'assets/img/about/2.jpg';
 import img3 from 'assets/img/about/3.jpg';
@@ -35,18 +35,24 @@ const items = [
     src: img4,
   },
 ];
-const About = () => (
-  <section className="page-section" id="about">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">About</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+class About extends Component {
+  render() {
+    return (
+      <section className="page-section" id="about">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h2 className="section-heading text-uppercase">About</h2>
+              <h3 className="section-subheading text-muted">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+            </div>
+          </div>
+          <AboutList items={items} />
         </div>
-      </div>
-      <AboutList items={items} />
-    </div>
-  </section>
-);
+      </section>
+    );
+  }
+}
 
 export default About;

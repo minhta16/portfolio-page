@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const AboutItem = props => {
   const { time, title, caption, inverted, src } = props;
   return (
-    <li className={inverted && 'timeline-inverted'}>
+    <li className={inverted ? 'timeline-inverted' : ''}>
       <div className="timeline-image">
         <img className="rounded-circle img-fluid" src={src} alt="" />
       </div>
@@ -26,7 +26,7 @@ AboutItem.propTypes = {
   title: PropTypes.string,
   caption: PropTypes.string,
   inverted: PropTypes.bool,
-  src: PropTypes.object.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 AboutItem.defaultProps = {
