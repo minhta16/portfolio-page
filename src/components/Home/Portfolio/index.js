@@ -10,27 +10,27 @@ import PortfolioList from './PortfolioList';
 const portfolioList = [
   {
     title: 'Sisu Vina',
-    caption: 'Web Design',
+    caption: 'Web Designer',
     src: img1,
   },
   {
     title: 'Swedish Immigration Trail',
-    caption: 'Game Design & Develop',
+    caption: 'Game Designer & Developer',
     src: img2,
   },
   {
     title: 'Augie Book Market',
-    caption: 'Product Develop',
+    caption: 'Developer',
     src: img3,
   },
   {
     title: 'homebase',
-    caption: 'Develop',
+    caption: 'Developer',
     src: img4,
   },
   {
     title: 'Chicago Crime Analysis',
-    caption: 'Software Engineer Internship',
+    caption: 'Data Model & Blog',
     src: img5,
   },
   {

@@ -2,19 +2,28 @@ import React, { Component } from 'react';
 
 class Jumbotron extends Component {
   render() {
+    const { onClick } = this.props;
     return (
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
             <div className="intro-lead-in">Why Hello There!</div>
             <div className="intro-heading">
-              Welcome to my home.
+              I am Minh.
               <br />
-              Let me tell you a bit about myself.
+              I enjoy coding,
+              <br />
+              taking photographs,
+              <br />
+              and traveling the world.
             </div>
-            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">
-              Click here
-            </a>
+            <button
+              type="button"
+              className="btn btn-primary btn-xl text-uppercase"
+              onClick={onClick}
+            >
+              Learn more
+            </button>
           </div>
         </div>
       </header>

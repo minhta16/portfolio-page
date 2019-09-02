@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import history from 'utils/history';
+import mtLogo from 'assets/img/logos/Mt.png';
+import mtLogoActive from 'assets/img/logos/Mt-yellow.png';
 
 export const routes = [
   {
-    name: 'Home',
+    name: 'HOME',
     path: '/home',
   },
   {
-    name: 'About',
+    name: 'ABOUT',
     path: '/about',
   },
 ];
@@ -15,7 +17,8 @@ export const routes = [
 class Header extends Component {
   state = {
     headerTop: true,
-    path: undefined,
+    logoActive: false,
+    path: window.location.pathname,
   };
 
   componentDidMount() {
@@ -28,8 +31,14 @@ class Header extends Component {
   }
 
   onRedirect = path => () => {
+    this.setState({
+      path,
+    });
     history.push(path);
   };
+
+  // eslint-disable-next-line react/destructuring-assignment
+  currentPageIsNav = navPath => navPath === this.state.path;
 
   calcScroll(h1) {
     const oldWindow = window;
@@ -50,8 +59,14 @@ class Header extends Component {
     }
   }
 
+  setLogoActive = logoActive => () => {
+    this.setState({
+      logoActive,
+    });
+  };
+
   render() {
-    const { headerTop } = this.state;
+    const { headerTop, logoActive } = this.state;
 
     return (
       <React.Fragment>
@@ -62,9 +77,15 @@ class Header extends Component {
           id="mainNav"
         >
           <div className="container">
-            <a className="navbar-brand" href="#page-top">
-              The Amazing Spider Minh
-            </a>
+            <button
+              type="button"
+              className="navbar-brand"
+              onMouseEnter={this.setLogoActive(true)}
+              onMouseLeave={this.setLogoActive(false)}
+              onClick={this.onRedirect('/home')}
+            >
+              <div className="logo" />
+            </button>
             <button
               className="navbar-toggler navbar-toggler-right"
               type="button"
@@ -81,9 +102,13 @@ class Header extends Component {
               <ul className="navbar-nav text-uppercase ml-auto">
                 {routes.map(route => (
                   <li key={route.name} className="nav-item">
-                    <a className="nav-link" onClick={this.onRedirect(route.path)}>
+                    <button
+                      type="button"
+                      className={`nav-link ${this.currentPageIsNav(route.path) ? 'active' : ''}`}
+                      onClick={this.onRedirect(route.path)}
+                    >
                       {route.name}
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>

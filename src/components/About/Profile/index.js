@@ -24,18 +24,26 @@ class Profile extends Component {
                 </p>
                 <ul className="list-inline social-buttons">
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="https://github.com/minhta16" rel="noopener noreferrer" target="_blank">
                       <i className="fab fa-github" />
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a
+                      href="https://www.linkedin.com/in/minh-ta-349823131/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
+                    <a
+                      href="https://www.instagram.com/theamazingspiderminh/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i className="fab fa-instagram" />
                     </a>
                   </li>
                 </ul>

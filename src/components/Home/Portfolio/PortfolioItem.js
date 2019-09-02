@@ -9,13 +9,13 @@ class PortfolioItem extends Component {
         <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
           <div className="portfolio-hover">
             <div className="portfolio-hover-content">
-              <i className="fas fa-plus fa-3x" />
+              <i className="fas fa-3x" />
             </div>
           </div>
           <img className="img-fluid" src={src} alt="" />
         </a>
         <div className="portfolio-caption">
-          <h4>{title}</h4>
+          <h5>{title}</h5>
           <p className="text-muted">{caption}</p>
         </div>
       </div>
