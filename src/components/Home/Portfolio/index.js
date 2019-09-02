@@ -9,33 +9,33 @@ import PortfolioList from './PortfolioList';
 
 const portfolioList = [
   {
-    title: 'Threads',
-    caption: 'Illustration',
+    title: 'Sisu Vina',
+    caption: 'Web Design',
     src: img1,
   },
   {
-    title: 'Explore',
-    caption: 'Graphic Design',
+    title: 'Swedish Immigration Trail',
+    caption: 'Game Design & Develop',
     src: img2,
   },
   {
-    title: 'Finish',
-    caption: 'Identity',
+    title: 'Augie Book Market',
+    caption: 'Product Develop',
     src: img3,
   },
   {
-    title: 'Lines',
-    caption: 'Branding',
+    title: 'homebase',
+    caption: 'Develop',
     src: img4,
   },
   {
-    title: 'Finish',
-    caption: 'Identity',
+    title: 'Chicago Crime Analysis',
+    caption: 'Software Engineer Internship',
     src: img5,
   },
   {
-    title: 'Finish',
-    caption: 'Identity',
+    title: 'Got It, Inc.',
+    caption: 'Software Engineer Internship',
     src: img6,
   },
 ];
@@ -47,9 +47,9 @@ class Portfolio extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Portfolio</h2>
+              <h2 className="section-heading text-uppercase">Projects</h2>
               <h3 className="section-subheading text-muted">
-                Lorem ipsum dolor sit amet consectetur.
+                What I have accomplished over the years
               </h3>
             </div>
           </div>

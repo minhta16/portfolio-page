@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Portfolio from './Portfolio';
-import Jumbotron from './Jumbotron';
+import Timeline from './Timeline';
+import Profile from './Profile';
 
 class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <Jumbotron />
-        <Portfolio />
+        <Profile />
+        <Timeline />
       </React.Fragment>
     );
   }

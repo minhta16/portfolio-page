@@ -4,8 +4,9 @@ import history from 'utils/history';
 import Header from 'components/Common/Header';
 import Home from 'components/Home';
 import Footer from 'components/Common/Footer';
+import About from 'components/About';
 
-const routes = [{ url: '/home', component: Home }];
+const routes = [{ url: '/home', component: Home }, { url: '/about', component: About }];
 const App = () => {
   return (
     <Router history={history}>
