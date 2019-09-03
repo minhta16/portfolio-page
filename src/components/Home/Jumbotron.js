@@ -1,8 +1,25 @@
 import React, { Component } from 'react';
 
 class Jumbotron extends Component {
+  // Setup animation
+  state = {
+    showUnderscore: false,
+  };
+
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      const { showUnderscore } = this.state;
+      return this.setState({ showUnderscore: !showUnderscore });
+    }, 500);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
   render() {
     const { onClick } = this.props;
+    const { showUnderscore } = this.state;
     return (
       <header className="masthead">
         <div className="container">
@@ -11,7 +28,9 @@ class Jumbotron extends Component {
             <div className="intro-heading">
               I am Minh.
               <br />
-              I enjoy coding,
+              {`I enjoy `}
+              <code>{`$ coding${showUnderscore ? '_' : ' '}`}</code>
+              ,
               <br />
               taking photographs,
               <br />

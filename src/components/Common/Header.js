@@ -17,8 +17,8 @@ export const routes = [
 class Header extends Component {
   state = {
     headerTop: true,
-    logoActive: false,
     path: window.location.pathname,
+    intervalId: 0,
   };
 
   componentDidMount() {
@@ -34,11 +34,29 @@ class Header extends Component {
     this.setState({
       path,
     });
-    history.push(path);
+    if (this.currentPageIsNav(path)) {
+      this.scrollToTop();
+    } else {
+      history.push(path);
+    }
   };
 
   // eslint-disable-next-line react/destructuring-assignment
   currentPageIsNav = navPath => navPath === this.state.path;
+
+  // https://codepen.io/Qbrid/pen/GjVvwL
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+      const { intervalId } = this.state;
+      clearInterval(intervalId);
+    }
+    window.scroll(0, window.pageYOffset - 50);
+  }
+
+  scrollToTop() {
+    const intervalId = setInterval(this.scrollStep.bind(this), 16.66);
+    this.setState({ intervalId });
+  }
 
   calcScroll(h1) {
     const oldWindow = window;
@@ -59,14 +77,8 @@ class Header extends Component {
     }
   }
 
-  setLogoActive = logoActive => () => {
-    this.setState({
-      logoActive,
-    });
-  };
-
   render() {
-    const { headerTop, logoActive } = this.state;
+    const { headerTop } = this.state;
 
     return (
       <React.Fragment>
@@ -77,13 +89,7 @@ class Header extends Component {
           id="mainNav"
         >
           <div className="container">
-            <button
-              type="button"
-              className="navbar-brand"
-              onMouseEnter={this.setLogoActive(true)}
-              onMouseLeave={this.setLogoActive(false)}
-              onClick={this.onRedirect('/home')}
-            >
+            <button type="button" className="navbar-brand" onClick={this.onRedirect('/home')}>
               <div className="logo" />
             </button>
             <button
