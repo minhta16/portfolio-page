@@ -24,12 +24,12 @@ class Jumbotron extends Component {
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
-            <div className="intro-lead-in">Why Hello There!</div>
+            <div className="intro-lead-in">Hello!</div>
             <div className="intro-heading">
               I am Minh.
               <br />
               {`I enjoy `}
-              <code>{`$ coding${showUnderscore ? '_' : ' '}`}</code>
+              <code>{`$coding${showUnderscore ? '_' : ' '}`}</code>
               ,
               <br />
               taking photographs,

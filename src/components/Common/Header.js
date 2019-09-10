@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import history from 'utils/history';
+import { withRouter } from 'react-router-dom';
 import mtLogo from 'assets/img/logos/Mt.png';
 import mtLogoActive from 'assets/img/logos/Mt-yellow.png';
 
@@ -31,14 +32,14 @@ class Header extends Component {
   }
 
   onRedirect = path => () => {
-    this.setState({
-      path,
-    });
     if (this.currentPageIsNav(path)) {
       this.scrollToTop();
     } else {
       history.push(path);
     }
+    this.setState({
+      path,
+    });
   };
 
   // eslint-disable-next-line react/destructuring-assignment
@@ -89,8 +90,12 @@ class Header extends Component {
           id="mainNav"
         >
           <div className="container">
-            <button type="button" className="navbar-brand" onClick={this.onRedirect('/home')}>
-              <div className="logo" />
+            <button
+              className="navbar-brand js-scroll-trigger"
+              type="button"
+              onClick={this.onRedirect('/home')}
+            >
+              Minh Ta
             </button>
             <button
               className="navbar-toggler navbar-toggler-right"
@@ -126,4 +131,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);

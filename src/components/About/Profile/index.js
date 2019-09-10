@@ -5,7 +5,7 @@ import img1 from 'assets/img/team/1.jpg';
 class Profile extends Component {
   render() {
     return (
-      <section className="bg-dark page-section" id="team">
+      <section className="bg-black page-section" id="team">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">

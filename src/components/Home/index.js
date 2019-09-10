@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import PseudoLoading from 'components/Common/PseudoLoading';
 import Portfolio from './Portfolio';
 import Jumbotron from './Jumbotron';
 
 class Home extends Component {
   render() {
     return (
-      <React.Fragment>
+      <PseudoLoading>
         <Jumbotron />
         <Portfolio />
-      </React.Fragment>
+      </PseudoLoading>
     );
   }
 }
