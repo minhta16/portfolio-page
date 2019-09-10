@@ -25,7 +25,7 @@ class PseudoLoading extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ done: true });
-    }, 2000);
+    }, 2500);
   }
 
   render() {
@@ -33,7 +33,7 @@ class PseudoLoading extends React.Component {
     const { children } = this.props;
     return (
       <div>
-        {!done ? (
+        {!done && (
           <section className="bg-dark page-blank">
             <FadeIn>
               <div className="d-flex justify-content-center align-items-center">
@@ -42,9 +42,8 @@ class PseudoLoading extends React.Component {
               </div>
             </FadeIn>
           </section>
-        ) : (
-          <div>{children}</div>
         )}
+        <div>{children}</div>
       </div>
     );
   }

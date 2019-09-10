@@ -90,12 +90,8 @@ class Header extends Component {
           id="mainNav"
         >
           <div className="container">
-            <button
-              className="navbar-brand js-scroll-trigger"
-              type="button"
-              onClick={this.onRedirect('/home')}
-            >
-              Minh Ta
+            <button type="button" className="navbar-brand" onClick={this.onRedirect('/home')}>
+              <div className="logo" />
             </button>
             <button
               className="navbar-toggler navbar-toggler-right"
