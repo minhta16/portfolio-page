@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import history from 'utils/history';
 import { withRouter } from 'react-router-dom';
-import mtLogo from 'assets/img/logos/Mt.png';
-import mtLogoActive from 'assets/img/logos/Mt-yellow.png';
 
 export const routes = [
   {

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FadeIn from 'react-fade-in';
 import Lottie from 'react-lottie';
-import ReactLoading from 'react-loading';
 import * as loadingData from 'assets/animations/loading-lego.json';
 
 const defaultOptions = {
@@ -50,7 +49,7 @@ class PseudoLoading extends React.Component {
 }
 
 PseudoLoading.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.any,
 };
 
 PseudoLoading.defaultProps = {

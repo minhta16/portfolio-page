@@ -676,7 +676,7 @@ ul.social-buttons li a:hover {
 .logo:active,
 .logo:focus,
 .logo:hover {
-  background: url(../img/logos/Mt-yellow.png);
+  background: url(../img/logos/mt-logo-active.png);
   background-size: contain;
   background-repeat: no-repeat;
   -o-transition: 0.5s;
@@ -711,4 +711,8 @@ button.bg-black:focus {
 
 .hidden {
   display: none;
+}
+
+.text-about {
+  text-align: justify;
 }
