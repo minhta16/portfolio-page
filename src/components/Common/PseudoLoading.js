@@ -25,7 +25,7 @@ class PseudoLoading extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ done: true });
-    }, 2500);
+    }, 2000);
   }
 
   render() {
@@ -43,7 +43,7 @@ class PseudoLoading extends React.Component {
             </FadeIn>
           </section>
         )}
-        <div>{children}</div>
+        <div className={!done ? 'hidden' : ''}>{children}</div>
       </div>
     );
   }
