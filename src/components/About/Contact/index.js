@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
   render() {
     return (
-      <section className="page-section" id="connect">
+      <section className="page-section bg-light" id="connect">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">

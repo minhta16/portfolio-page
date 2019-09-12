@@ -15,7 +15,7 @@ class Profile extends Component {
           </div>
         </section>
 
-        <section className="bg-light page-section" id="team">
+        <section className="bg-white page-section" id="team">
           <div className="container">
             <div className="row">
               <div className="col-sm-12">

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from 'components/App';
 import * as serviceWorker from './serviceWorker';
 import 'assets/styles/bootstrap/css/bootstrap.min.css';
-import 'assets/styles/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 import 'assets/styles/agency.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

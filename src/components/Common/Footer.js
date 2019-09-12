@@ -10,6 +10,11 @@ const Footer = () => (
         <div className="col-md-4">
           <ul className="list-inline social-buttons">
             <li className="list-inline-item">
+              <a href="mailto: minhta16@augustana.edu" rel="noopener noreferrer" target="_blank">
+                <i className="fa fa-envelope" />
+              </a>
+            </li>
+            <li className="list-inline-item">
               <a href="https://github.com/minhta16" rel="noopener noreferrer" target="_blank">
                 <i className="fab fa-github" />
               </a>
