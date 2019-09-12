@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import history from 'utils/history';
+import { withRouter } from 'react-router-dom';
 
 class Jumbotron extends Component {
   // Setup animation
@@ -17,8 +19,11 @@ class Jumbotron extends Component {
     clearInterval(this.interval);
   }
 
+  onClickLearnMore = () => {
+    history.push('/about');
+  };
+
   render() {
-    const { onClick } = this.props;
     const { showUnderscore } = this.state;
     return (
       <header className="masthead">
@@ -39,7 +44,7 @@ class Jumbotron extends Component {
             <button
               type="button"
               className="btn btn-primary btn-xl text-uppercase"
-              onClick={onClick}
+              onClick={this.onClickLearnMore}
             >
               Learn more
             </button>
@@ -50,4 +55,4 @@ class Jumbotron extends Component {
   }
 }
 
-export default Jumbotron;
+export default withRouter(Jumbotron);

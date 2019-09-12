@@ -24,12 +24,8 @@ const Footer = () => (
               </a>
             </li>
             <li className="list-inline-item">
-              <a
-                href="https://www.instagram.com/theamazingspiderminh/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i className="fab fa-instagram" />
+              <a href="https://medium.com/@minhta16" rel="noopener noreferrer" target="_blank">
+                <i className="fab fa-medium-m" />
               </a>
             </li>
           </ul>

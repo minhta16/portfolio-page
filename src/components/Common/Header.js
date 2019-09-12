@@ -25,6 +25,14 @@ class Header extends Component {
     window.addEventListener('scroll', this.calcScroll.bind(this, h1));
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.path !== window.location.pathname) {
+      this.setState({
+        path: window.location.pathname,
+      });
+    }
+  }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.calcScroll);
   }
@@ -35,9 +43,6 @@ class Header extends Component {
     } else {
       history.push(path);
     }
-    this.setState({
-      path,
-    });
   };
 
   // eslint-disable-next-line react/destructuring-assignment
