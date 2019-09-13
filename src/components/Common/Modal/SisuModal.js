@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import img from 'assets/img/portfolio/01-full.jpg';
+import Image from 'components/Common/Image';
+import image from 'assets/img/portfolio/01-full.jpg';
 import BaseModal from './BaseModal';
 
 class SisuModal extends Component {
@@ -8,7 +9,7 @@ class SisuModal extends Component {
       <BaseModal {...this.props}>
         <h2 className="text-uppercase">Project Name</h2>
         <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-        <img className="img-fluid d-block mx-auto" src={img} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={image} alt="" />
         <p>
           Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt

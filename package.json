@@ -54,6 +54,7 @@
     "react-dev-utils": "^9.0.3",
     "react-dom": "^16.9.0",
     "react-fade-in": "^0.1.6",
+    "react-image": "^2.2.0",
     "react-loading": "^2.0.3",
     "react-lottie": "^1.2.3",
     "react-motion": "^0.5.2",
