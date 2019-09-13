@@ -27,33 +27,38 @@ class Jumbotron extends Component {
   render() {
     const { showUnderscore } = this.state;
     return (
-      <header className="masthead">
-        <div className="container">
-          <FadeIn>
+      <FadeIn>
+        <header className="masthead">
+          <div className="container">
             <div className="intro-text">
-              <div className="intro-lead-in">Hello!</div>
-              <div className="intro-heading">
-                I am Minh.
-                <br />
-                {`I enjoy `}
-                <code>{`$coding${showUnderscore ? '_' : ' '}`}</code>
-                ,
-                <br />
-                taking photographs,
-                <br />
-                and traveling the world.
-              </div>
-              <button
-                type="button"
-                className="btn btn-primary btn-xl text-uppercase"
-                onClick={this.onClickLearnMore}
-              >
-                Learn more
-              </button>
+              <FadeIn delay={400} transitionDuration={1000}>
+                {/* First fadein element */}
+                <React.Fragment>
+                  <div className="intro-lead-in">Hello!</div>
+                  <div className="intro-heading">
+                    I am Minh.
+                    <br />
+                    {`I enjoy `}
+                    <code>{`$coding${showUnderscore ? '_' : ' '}`}</code>
+                    ,
+                    <br />
+                    taking photographs,
+                    <br />
+                    and traveling the world.
+                  </div>
+                </React.Fragment>
+                <button
+                  type="button"
+                  className="btn btn-primary btn-xl text-uppercase"
+                  onClick={this.onClickLearnMore}
+                >
+                  Learn more
+                </button>
+              </FadeIn>
             </div>
-          </FadeIn>
-        </div>
-      </header>
+          </div>
+        </header>
+      </FadeIn>
     );
   }
 }
