@@ -1,12 +1,12 @@
 import React from 'react';
 import Img from 'react-image';
 import Lottie from 'react-lottie';
-import * as loadingData from 'assets/animations/loading-image.json';
+import * as imageLoader from 'assets/animations/image-loader-2.json';
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: loadingData.default,
+  animationData: imageLoader.default,
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid slice',
   },

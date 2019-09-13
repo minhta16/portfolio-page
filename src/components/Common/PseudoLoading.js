@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FadeIn from 'react-fade-in';
 import Lottie from 'react-lottie';
-import * as loadingLego from 'assets/animations/loading-lego.json';
+import * as legoLoader from 'assets/animations/lego-loader.json';
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: loadingLego.default,
+  animationData: legoLoader.default,
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid slice',
   },
