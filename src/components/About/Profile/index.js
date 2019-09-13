@@ -6,7 +6,7 @@ class Profile extends Component {
   render() {
     return (
       <React.Fragment>
-        <FadeIn>
+        <FadeIn delay={1000}>
           <section className="bg-black page-section" id="team">
             <div className="container">
               <div className="row">
@@ -19,7 +19,7 @@ class Profile extends Component {
             </div>
           </section>
         </FadeIn>
-        <FadeIn delay={600} transitionDuration={1000}>
+        <FadeIn delay={1600} transitionDuration={1000}>
           <section className="bg-white page-section" id="team">
             <div className="container">
               <div className="row">

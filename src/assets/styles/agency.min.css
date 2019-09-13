@@ -705,7 +705,12 @@ button.bg-black:focus {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  left: -9999em;
+  width: 1px;
+  height: 1px;
 }
 
 .text-about {
