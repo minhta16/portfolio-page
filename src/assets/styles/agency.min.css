@@ -122,9 +122,6 @@ img::-moz-selection {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 #mainNav .navbar-brand {
-  background: none !important;
-  border: none;
-  padding: 0 !important;
   color: #fed136;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -318,6 +315,7 @@ header.masthead .intro-text .intro-heading {
   }
 }
 .portfolio-modal .modal-dialog {
+  border: none;
   margin: 1rem;
   max-width: 100vw;
 }
@@ -723,4 +721,14 @@ button.bg-black:focus {
   text-rendering: auto;
   line-height: 1;
   padding: 3px;
+}
+
+code {
+  color: #fed136;
+}
+
+.borderless-button {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
 }

@@ -7,7 +7,7 @@ const PortfolioList = props => {
   return (
     <div className="row">
       {items.map(item => (
-        <PortfolioItem key={item.title} title={item.title} caption={item.caption} src={item.src} />
+        <PortfolioItem key={item.title} item={item} />
       ))}
     </div>
   );

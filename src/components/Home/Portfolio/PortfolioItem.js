@@ -2,38 +2,41 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class PortfolioItem extends Component {
+  state = {
+    isOpen: false,
+  };
+
+  toggle = () => {
+    this.setState(prevState => ({
+      isOpen: !prevState.isOpen,
+    }));
+  };
+
   render() {
-    const { onClick, title, caption, src } = this.props;
+    const { item } = this.props;
+    const { isOpen } = this.state;
     return (
       <div className="col-md-4 col-sm-6 portfolio-item">
-        <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+        <button type="button" className="portfolio-link borderless-button" onClick={this.toggle}>
           <div className="portfolio-hover">
             <div className="portfolio-hover-content">
               <i className="fas fa-3x" />
             </div>
           </div>
-          <img className="img-fluid" src={src} alt="" />
-        </a>
+          <img className="img-fluid" src={item.src} alt="" />
+        </button>
         <div className="portfolio-caption">
-          <h5>{title}</h5>
-          <p className="text-muted">{caption}</p>
+          <h5>{item.title}</h5>
+          <p className="text-muted">{item.caption}</p>
         </div>
+        <item.modal isOpen={isOpen} toggle={this.toggle} />
       </div>
     );
   }
 }
 
 PortfolioItem.propTypes = {
-  onClick: PropTypes.func,
-  title: PropTypes.string,
-  caption: PropTypes.string,
-  src: PropTypes.string.isRequired,
-};
-
-PortfolioItem.defaultProps = {
-  onClick: () => {},
-  title: '',
-  caption: '',
+  item: PropTypes.object.isRequired,
 };
 
 export default PortfolioItem;

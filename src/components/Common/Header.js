@@ -93,7 +93,11 @@ class Header extends Component {
           id="mainNav"
         >
           <div className="container">
-            <button type="button" className="navbar-brand" onClick={this.onRedirect('/home')}>
+            <button
+              type="button"
+              className="navbar-brand borderless-button"
+              onClick={this.onRedirect('/home')}
+            >
               <div className="logo" />
             </button>
             <button
