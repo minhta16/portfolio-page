@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Image from 'components/Common/Image';
 import homebaseImg from 'assets/img/portfolio/homebase/homebase.jpg';
+import umlImg from 'assets/img/portfolio/homebase/homebase-uml.jpg';
 import teamImg from 'assets/img/portfolio/homebase/team-photo.jpg';
 import listingImg from 'assets/img/portfolio/homebase/homebase-listing.jpg';
 import mapImg from 'assets/img/portfolio/homebase/homebase-map.jpg';
@@ -24,8 +25,8 @@ class HomebaseModal extends Component {
           have to rely on personal connections to book their housing. It is not a great picture to
           look at.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={teamImg} alt="" />
-        <p className="item-intro text-muted">The homebase team</p>
+        <Image className="img-fluid d-block mx-auto" src={umlImg} alt="" />
+        <p className="item-intro text-muted">The very initial design of homebase</p>
         <p>
           We started by laying out ideas and designs for our rental application. We decided to go
           with building a web application because it is the best of both worlds: easy access with
@@ -55,6 +56,8 @@ class HomebaseModal extends Component {
           closely with him on this project. We were also able to embed some Google services
           including Login, Maps, and Firebase.
         </p>
+        <Image className="img-fluid d-block mx-auto" src={teamImg} alt="" />
+        <p className="item-intro text-muted">The homebase team</p>
         <p className="item-intro">
           Please check out our demo here:{' '}
           <a
