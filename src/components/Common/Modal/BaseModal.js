@@ -16,7 +16,7 @@ class BaseModal extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto">
-              <div className="modal-body">
+              <div className="modal-body align-left">
                 {/* Project Details Go Here */}
                 {children}
                 <button className="btn btn-primary" onClick={toggle} type="button">

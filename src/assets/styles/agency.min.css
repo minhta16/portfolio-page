@@ -713,8 +713,18 @@ button.bg-black:focus {
   height: 1px;
 }
 
-.text-about {
+.align-justify {
   text-align: justify;
+}
+
+.modal-body.align-left h3,
+.modal-body.align-left p,
+.modal-body.align-left h5 {
+  text-align: left;
+}
+
+p.item-intro.text-muted {
+  text-align: center;
 }
 
 .fa-modified {

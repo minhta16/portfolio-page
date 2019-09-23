@@ -6,43 +6,48 @@ import img4 from 'assets/img/portfolio/04-thumbnail.jpg';
 import img5 from 'assets/img/portfolio/05-thumbnail.jpg';
 import img6 from 'assets/img/portfolio/06-thumbnail.jpg';
 import SisuModal from 'components/Common/Modal/SisuModal';
+import SwedishModal from 'components/Common/Modal/SwedishModal';
+import BookMarketModal from 'components/Common/Modal/BookMarketModal';
+import HomebaseModal from 'components/Common/Modal/HomebaseModal';
+import ChicagoModal from 'components/Common/Modal/ChicagoModal';
+import GotItModal from 'components/Common/Modal/GotItModal';
 import PortfolioList from './PortfolioList';
 
 const portfolioList = [
   {
-    title: 'Sisu Vina',
-    caption: 'Web Designer',
-    src: img1,
-    modal: SisuModal,
-  },
-  {
-    title: 'Swedish Immigration Trail',
-    caption: 'Game Designer & Developer',
-    src: img2,
-    modal: SisuModal,
-  },
-  {
-    title: 'Augie Book Market',
-    caption: 'Developer',
-    src: img3,
-    modal: SisuModal,
-  },
-  {
-    title: 'homebase',
-    caption: 'Developer',
-    src: img4,
-    modal: SisuModal,
+    title: 'Got It, Inc.',
+    caption: 'Software Engineer Internship',
+    src: img6,
+    modal: GotItModal,
   },
   {
     title: 'Chicago Crime Analysis',
     caption: 'Data Model & Blog',
     src: img5,
-    modal: SisuModal,
+    modal: ChicagoModal,
   },
   {
-    title: 'Got It, Inc.',
-    caption: 'Software Engineer Internship',
-    src: img6,
+    title: 'homebase',
+    caption: 'Developer',
+    src: img4,
+    modal: HomebaseModal,
+  },
+  {
+    title: 'Augie Book Market',
+    caption: 'Developer',
+    src: img3,
+    modal: BookMarketModal,
+  },
+  {
+    title: 'Swedish Immigration Trail',
+    caption: 'Game Designer & Developer',
+    src: img2,
+    modal: SwedishModal,
+  },
+  {
+    title: 'Sisu Vina',
+    caption: 'Web Designer',
+    src: img1,
     modal: SisuModal,
   },
 ];
