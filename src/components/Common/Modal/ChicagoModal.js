@@ -24,18 +24,17 @@ class ChicagoModal extends Component {
         <Image className="img-fluid d-block mx-auto" src={heatmapImg} alt="" />
         <p className="item-intro text-muted">Camera location vs. heatmap of crime</p>
         <p>
-          If you are interested in learning more about our analysis, please check the link below for
-          our full recap of how we started, the challenges that we faced, and the insight we got
-          eventually.
-        </p>
-        <p>
+          {'If you are interested in learning more about our analysis, please '}
           <a
             href="https://medium.com/augie-data360-chicago-crime-analysis"
             rel="noopener noreferrer"
             target="_blank"
           >
-            https://medium.com/augie-data360-chicago-crime-analysis
+            click here
           </a>
+          {
+            ' for our full recap of how we started, the challenges that we faced, and the insight we got eventually.'
+          }
         </p>
       </BaseModal>
     );

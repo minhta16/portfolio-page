@@ -77,13 +77,13 @@ class SwedishModal extends Component {
           decisions I made during the implementation progress, I am proud of the end result.
         </p>
         <p className="item-intro">
-          {`You can check out the game here: `}
+          {`You can check out the game `}
           <a
             href="https://www.augustana.edu/swenson/swedishvideogame"
             rel="noopener noreferrer"
             target="_blank"
           >
-            https://www.augustana.edu/swenson/swedishvideogame
+            here
           </a>
           .
         </p>

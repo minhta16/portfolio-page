@@ -11,6 +11,7 @@ class BookMarketModal extends Component {
       <BaseModal {...this.props}>
         <h2 className="text-uppercase">Augie Book Market</h2>
         <p className="item-intro text-muted">A solution for selling used textbooks.</p>
+        <p className="item-intro text-muted">February 2018 - April 2018</p>
         <Image className="img-fluid d-block mx-auto" src={logoImg} alt="" />
         <p>
           One day in my Spring break, I stumbled upon countless Facebook posts of students selling
@@ -59,9 +60,6 @@ class BookMarketModal extends Component {
           structure myself. Then I implemented the front-end and has API calls to communicate with
           the Firebase server.
         </p>
-        <ul className="list-inline">
-          <li>Date: February 2018 - April 2018</li>
-        </ul>
       </BaseModal>
     );
   }
