@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class BaseModal extends Component {
   render() {
-    const { children, isOpen, title, toggle } = this.props;
+    const { children, isOpen, toggle } = this.props;
     return (
       <Modal isOpen={isOpen} toggle={toggle} modalClassName="portfolio-modal">
         <button type="button" className="close-modal borderless-button" onClick={toggle}>
@@ -34,13 +34,8 @@ class BaseModal extends Component {
 
 BaseModal.propTypes = {
   toggle: PropTypes.func.isRequired,
-  title: PropTypes.string,
   children: PropTypes.any.isRequired,
   isOpen: PropTypes.bool.isRequired,
-};
-
-BaseModal.defaultProps = {
-  title: '',
 };
 
 export default BaseModal;

@@ -41,7 +41,7 @@ class HomebaseModal extends Component {
           everyone.
         </p>
         <Image className="img-fluid d-block mx-auto" src={mapImg} alt="" />
-        <p className="item-intro text-muted">Each listing has a map for users' convenience</p>
+        <p className="item-intro text-muted">Each listing has a map for users&apos; convenience</p>
         <h3>Takeaways</h3>
         <h5>Agile Methodology</h5>
         <p>
@@ -59,7 +59,7 @@ class HomebaseModal extends Component {
         <Image className="img-fluid d-block mx-auto" src={teamImg} alt="" />
         <p className="item-intro text-muted">The homebase team</p>
         <p className="item-intro">
-          Please check out our demo here:{' '}
+          {`Please check out our demo here: `}
           <a
             href="https://infallible-hypatia-806937.netlify.com/"
             rel="noopener noreferrer"

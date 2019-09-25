@@ -39,12 +39,9 @@ class Jumbotron extends Component {
                     I am Minh.
                     <br />
                     {`I enjoy `}
-                    <code>{`$coding${showUnderscore ? '_' : ' '}`}</code>
-                    ,
+                    <code>{`$problem_solving ${showUnderscore ? '_' : ' '}`}</code>
                     <br />
-                    taking photographs,
-                    <br />
-                    and traveling the world.
+                    and capturing world&apos;s essence.
                   </div>
                 </React.Fragment>
               </FadeIn>

@@ -24,7 +24,7 @@ class SisuModal extends Component {
           user experience design and what good brand recognition consists of through hours of
           researching design principles for the logo and website.
         </p>
-        <h5>Designer's Toolbox</h5>
+        <h5>Designer&apos;s Toolbox</h5>
         <p>
           I spent most of my time working on Adobe Illustrator, so I gained some insight into the
           tool and its pros and cons in comparison to other tools that I have used before.

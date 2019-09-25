@@ -21,12 +21,14 @@ class Header extends Component {
   };
 
   componentDidMount() {
+    // eslint-disable-next-line react/no-string-refs
     const h1 = parseInt(this.refs.header.offsetHeight, 10);
     window.addEventListener('scroll', this.calcScroll.bind(this, h1));
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.path !== window.location.pathname) {
+      // eslint-disable-next-line react/no-did-update-set-state
       this.setState({
         path: window.location.pathname,
       });
@@ -89,6 +91,7 @@ class Header extends Component {
         <nav
           className={`navbar navbar-expand-lg navbar-dark fixed-top ${!headerTop &&
             'navbar-shrink'}`}
+          // eslint-disable-next-line react/no-string-refs
           ref="header"
           id="mainNav"
         >
