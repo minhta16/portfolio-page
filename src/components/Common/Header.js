@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import history from 'utils/history';
 import { withRouter } from 'react-router-dom';
+import { Collapse } from 'reactstrap';
 
 export const routes = [
   {
@@ -18,6 +19,7 @@ class Header extends Component {
     headerTop: true,
     path: window.location.pathname,
     intervalId: 0,
+    headerCollapsed: true,
   };
 
   componentDidMount() {
@@ -40,6 +42,10 @@ class Header extends Component {
   }
 
   onRedirect = path => () => {
+    const { headerCollapsed } = this.state;
+    if (!headerCollapsed) {
+      this.toggleCollapse();
+    }
     if (this.currentPageIsNav(path)) {
       this.scrollToTop();
     } else {
@@ -49,6 +55,13 @@ class Header extends Component {
 
   // eslint-disable-next-line react/destructuring-assignment
   currentPageIsNav = navPath => navPath === this.state.path;
+
+  toggleCollapse = () => {
+    const { headerCollapsed } = this.state;
+    this.setState({
+      headerCollapsed: !headerCollapsed,
+    });
+  };
 
   // https://codepen.io/Qbrid/pen/GjVvwL
   scrollStep() {
@@ -84,7 +97,7 @@ class Header extends Component {
   }
 
   render() {
-    const { headerTop } = this.state;
+    const { headerTop, headerCollapsed } = this.state;
 
     return (
       <React.Fragment>
@@ -106,16 +119,12 @@ class Header extends Component {
             <button
               className="navbar-toggler navbar-toggler-right"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              onClick={this.toggleCollapse}
             >
-              Menu
+              {`Menu `}
               <i className="fas fa-bars" />
             </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
+            <Collapse className="navbar-collapse" isOpen={!headerCollapsed}>
               <ul className="navbar-nav text-uppercase ml-auto">
                 {routes.map(route => (
                   <li key={route.name} className="nav-item">
@@ -129,7 +138,7 @@ class Header extends Component {
                   </li>
                 ))}
               </ul>
-            </div>
+            </Collapse>
           </div>
         </nav>
       </React.Fragment>
