@@ -29,7 +29,7 @@ class GotItModal extends Component {
           and big data and was a part of the team that won the second prize of Got It’s Test
           Automation Hackathon.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={hackathonImg} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={hackathonImg} alt="Hackaton winners" />
         <p className="item-intro text-muted">Hackathon winners. Source: Got It, inc. Medium</p>
         <h3>Takeaways</h3>
         <h5>Corporation workflows</h5>
@@ -47,7 +47,7 @@ class GotItModal extends Component {
           different platforms to ensure work quality. Additionally, the internship enables me to
           better prioritize tasks while working on multiple projects at once.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={farewellImg} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={farewellImg} alt="Farewel, Got It!" />
         <p className="item-intro text-muted">Farewell, Got It!. Source: Got It, inc.</p>
         <p>
           I have had a lot of fun and knowledge working at Got It. I had the chance to work with

@@ -23,7 +23,7 @@ class PortfolioItem extends Component {
               <i className="fas fa-3x" />
             </div>
           </div>
-          <img className="img-fluid" src={item.src} alt="" />
+          <img className="img-fluid" src={item.src} alt={item.alt} />
         </button>
         <div className="portfolio-caption">
           <h5>{item.title}</h5>

@@ -14,7 +14,7 @@ class HomebaseModal extends Component {
         <h2 className="text-uppercase">Homebase</h2>
         <p className="item-intro text-muted">A new way to rent</p>
         <p className="item-intro text-muted">February 2018 - May 2018</p>
-        <Image className="img-fluid d-block mx-auto" src={homebaseImg} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={homebaseImg} alt="homebase logo" />
         <p className="item-intro text-muted">homebase - A new way to rent</p>
         <p>
           Homebase was created to simplify the complex and inefficient rental process that students
@@ -25,14 +25,22 @@ class HomebaseModal extends Component {
           have to rely on personal connections to book their housing. It is not a great picture to
           look at.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={umlImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={umlImg}
+          alt="The very initial design of homebase"
+        />
         <p className="item-intro text-muted">The very initial design of homebase</p>
         <p>
           We started by laying out ideas and designs for our rental application. We decided to go
           with building a web application because it is the best of both worlds: easy access with
           mobile devices and efficient management with desktops.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={listingImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={listingImg}
+          alt="hombebase listing page"
+        />
         <p className="item-intro text-muted">homebase listing page</p>
         <p>
           We thought about implementing two different hubs for users and admins. Users, including
@@ -40,7 +48,7 @@ class HomebaseModal extends Component {
           of filtering bad content and policy violated listings.to create a friendly environment for
           everyone.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={mapImg} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={mapImg} alt="hombase listing map" />
         <p className="item-intro text-muted">Each listing has a map for users&apos; convenience</p>
         <h3>Takeaways</h3>
         <h5>Agile Methodology</h5>
@@ -56,7 +64,7 @@ class HomebaseModal extends Component {
           closely with him on this project. We were also able to embed some Google services
           including Login, Maps, and Firebase.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={teamImg} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={teamImg} alt="The homebase team" />
         <p className="item-intro text-muted">The homebase team</p>
         <p className="item-intro">
           {`Please check out our demo here: `}

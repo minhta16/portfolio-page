@@ -25,7 +25,11 @@ class SwedishModal extends Component {
           content. Our team has 4 people and we divided into two groups for the game, which is
           powered by libGDX for Java, and the game builder, which utilizes the JavaFx engine.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={introImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={introImg}
+          alt="Swedish Immigrant Trail game intro screen"
+        />
         <p className="item-intro text-muted">Swedish Immigrant Trail game intro screen.</p>
         <h3>During the Trimester</h3>
         <p>
@@ -38,8 +42,12 @@ class SwedishModal extends Component {
           finished.
         </p>
         <h3>Later Development</h3>
-        <Image className="img-fluid d-block mx-auto" src={zoomImg} alt="" />
-        <p className="item-intro text-muted">The image zooming feature of the game.</p>
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={zoomImg}
+          alt="The image zooming feature of the game"
+        />
+        <p className="item-intro text-muted">The image zooming feature of the game</p>
         <p>
           Unfortunately, my teammates were not able to continue the project. I then become the sole
           developer of the game and I spent about 5 months building the latter half of the game

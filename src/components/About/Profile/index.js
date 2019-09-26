@@ -25,7 +25,7 @@ class Profile extends Component {
               <div className="row">
                 <div className="col-sm-12">
                   <div className="team-member">
-                    <img className="mx-auto rounded-circle" src={img1} alt="" />
+                    <img className="mx-auto rounded-circle" src={img1} alt="Minh Ta avatar" />
                   </div>
                 </div>
               </div>

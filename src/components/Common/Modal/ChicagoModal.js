@@ -11,7 +11,11 @@ class ChicagoModal extends Component {
         <h2 className="text-uppercase">Chicago Crime Analysis</h2>
         <p className="item-intro text-muted">A deeper look into Chicago crime</p>
         <p className="item-intro text-muted">February 2018 - May 2018</p>
-        <Image className="img-fluid d-block mx-auto" src={tempGraphImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={tempGraphImg}
+          alt="graph of crime rate and temperature"
+        />
         <p className="item-intro text-muted">The correlation between crime rate and temperature</p>
         <p>
           On a snowy day in February 2019, when I was looking at the world happiness scores, an idea
@@ -21,7 +25,11 @@ class ChicagoModal extends Component {
           two main parts: (1) the correlation between crime rate and different variables and (2) the
           increase of security cameras in correlation with the crime rate.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={heatmapImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={heatmapImg}
+          alt="graph of camera location and heatmap of crime"
+        />
         <p className="item-intro text-muted">Camera location vs. heatmap of crime</p>
         <p>
           {'If you are interested in learning more about our analysis, please '}

@@ -19,36 +19,42 @@ const portfolioList = [
     caption: 'Software Engineer Internship',
     src: img6,
     modal: GotItModal,
+    alt: 'Got It logo',
   },
   {
     title: 'Chicago Crime Analysis',
     caption: 'Data Model & Blog',
     src: img5,
     modal: ChicagoModal,
+    alt: 'Graph of chicago crime',
   },
   {
     title: 'homebase',
     caption: 'Developer',
     src: img4,
     modal: HomebaseModal,
+    alt: 'homebase logo',
   },
   {
     title: 'Augie Book Market',
     caption: 'Developer',
     src: img3,
     modal: BookMarketModal,
+    alt: 'Augie Book Market logo',
   },
   {
     title: 'Swedish Immigration Trail',
     caption: 'Game Designer & Developer',
     src: img2,
     modal: SwedishModal,
+    alt: 'Swedish Immigration Trail welcome screen',
   },
   {
     title: 'Sisu Vina',
     caption: 'Web Designer',
     src: img1,
     modal: SisuModal,
+    alt: 'Sisu Vina logo',
   },
 ];
 

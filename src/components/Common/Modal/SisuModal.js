@@ -15,8 +15,12 @@ class SisuModal extends Component {
           three months, I was able to come up with a web interface design and a logo for the newly
           formed firm.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={img} alt="" />
-        <p className="item-intro text-muted">The final design for SisuVina logo.</p>
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={img}
+          alt="The final design for SisuVina logo"
+        />
+        <p className="item-intro text-muted">The final design for SisuVina logo</p>
         <h3>Takeaways</h3>
         <h5>Brand Recognition and UX design</h5>
         <p>

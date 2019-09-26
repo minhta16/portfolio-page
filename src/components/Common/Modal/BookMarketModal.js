@@ -12,7 +12,7 @@ class BookMarketModal extends Component {
         <h2 className="text-uppercase">Augie Book Market</h2>
         <p className="item-intro text-muted">A solution for selling used textbooks.</p>
         <p className="item-intro text-muted">February 2018 - April 2018</p>
-        <Image className="img-fluid d-block mx-auto" src={logoImg} alt="" />
+        <Image className="img-fluid d-block mx-auto" src={logoImg} alt="augie book market logo" />
         <p>
           One day in my Spring break, I stumbled upon countless Facebook posts of students selling
           their used books. I wondered if I can create a platform where it is more efficient for
@@ -32,13 +32,21 @@ class BookMarketModal extends Component {
           used books. Hence, I focused on implementing an efficient search functionality that can
           sort books based on their name, ISBN, and author.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={searchImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={searchImg}
+          alt="user searching for posted listings"
+        />
         <p className="item-intro text-muted">User searching for posted listings.</p>
         <p>
           Another problem I thought about when posting is the possibility of spam posts. I decided
           to implement the Google Books API to avoid invalid postings.
         </p>
-        <Image className="img-fluid d-block mx-auto" src={postingImg} alt="" />
+        <Image
+          className="img-fluid d-block mx-auto"
+          src={postingImg}
+          alt="user searching for a book to post their listing"
+        />
         <p className="item-intro text-muted">User searching for a book to post their listing.</p>
         <h3>FUTURE DEVELOPMENT</h3>
         <p>
