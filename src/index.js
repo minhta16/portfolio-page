@@ -4,7 +4,7 @@ import App from 'components/App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import 'assets/styles/agency.min.css';
+import 'assets/styles/minhta.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

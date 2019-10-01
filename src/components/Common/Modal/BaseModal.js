@@ -19,7 +19,7 @@ class BaseModal extends Component {
               <div className="modal-body align-left">
                 {/* Project Details Go Here */}
                 {children}
-                <button className="btn btn-primary" onClick={toggle} type="button">
+                <button className="btn btn-secondary" onClick={toggle} type="button">
                   <i className="fas fa-arrow-left" />
                   {' Back'}
                 </button>

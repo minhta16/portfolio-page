@@ -48,7 +48,7 @@ class Jumbotron extends Component {
               <FadeIn delay={1800} transitionDuration={1000}>
                 <button
                   type="button"
-                  className="btn btn-primary btn-xl text-uppercase"
+                  className="btn btn-primary text-uppercase borderless-button"
                   onClick={this.onClickLearnMore}
                 >
                   Learn more
