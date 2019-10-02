@@ -23,12 +23,12 @@ class Profile extends Component {
           <section className="bg-white page-section" id="team">
             <div className="container">
               <div className="row">
-                <div className="col-sm-3">
+                <div className="col-lg-4">
                   <div className="team-member">
                     <img className="mx-auto" src={img1} alt="Minh Ta avatar" />
                   </div>
                 </div>
-                <div className="col-lg-7 col-lg-offset-2 mx-auto">
+                <div className="col-lg-7 col-lg-offset-1 mx-auto">
                   <p className="mt-text-paragraph-bold mt-margin-btm-75 align-justify">
                     A little bit about myself
                   </p>

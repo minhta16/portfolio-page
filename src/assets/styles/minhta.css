@@ -575,7 +575,7 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
 }
 .team-member img {
-  width: 300px;
+  max-width: 100%;
   height: auto;
 }
 .team-member h4 {
