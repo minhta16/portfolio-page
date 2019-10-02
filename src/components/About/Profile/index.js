@@ -8,7 +8,7 @@ class Profile extends Component {
       <React.Fragment>
         <FadeIn delay={1000}>
           <section className="bg-black page-section padding-nav" id="team">
-            <div className="container">
+            {/* <div className="container">
               <div className="row">
                 <div className="col-lg-12 text-center">
                   <FadeIn delay={200} transitionDuration={1000}>
@@ -16,7 +16,7 @@ class Profile extends Component {
                   </FadeIn>
                 </div>
               </div>
-            </div>
+            </div> */}
           </section>
         </FadeIn>
         <FadeIn delay={1600} transitionDuration={1000}>
