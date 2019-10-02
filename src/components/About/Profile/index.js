@@ -1,9 +1,29 @@
 import React, { Component } from 'react';
 import FadeIn from 'react-fade-in';
 import img1 from 'assets/img/team/3.jpg';
+import img1Square from 'assets/img/team/3_recta.jpg';
 
 class Profile extends Component {
+  state = {
+    width: window.innerWidth,
+  };
+
+  // Bind window width and height
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   render() {
+    const { width } = this.state;
     return (
       <React.Fragment>
         <FadeIn delay={1000}>
@@ -25,7 +45,11 @@ class Profile extends Component {
               <div className="row">
                 <div className="col-lg-4">
                   <div className="team-member">
-                    <img className="mx-auto" src={img1} alt="Minh Ta avatar" />
+                    <img
+                      className="mx-auto"
+                      src={width <= 992 ? img1Square : img1}
+                      alt="Minh Ta avatar"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-7 col-lg-offset-1 mx-auto">
