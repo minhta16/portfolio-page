@@ -32,7 +32,7 @@ class Profile extends Component {
                   <p className="mt-text-paragraph-bold mt-margin-btm-75 align-justify">
                     A little bit about myself
                   </p>
-                  <p className="mt-text-paragraph align-justify">
+                  <p className="mt-text-paragraph mt-margin-btm-75 align-justify">
                     <strong>Home: </strong>
                     Hanoi, Vietnam
                     <br />
