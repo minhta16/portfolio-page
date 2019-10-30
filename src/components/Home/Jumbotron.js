@@ -39,7 +39,7 @@ class Jumbotron extends Component {
                     I am Minh.
                     <br />
                     {`I enjoy `}
-                    <code>{`$problem_solving ${showUnderscore ? '_' : ' '}`}</code>
+                    <code>{`$problem_solving${showUnderscore ? '_' : ' '}`}</code>
                     <br />
                     and capturing world&apos;s essence.
                   </div>

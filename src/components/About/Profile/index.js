@@ -64,7 +64,7 @@ class Profile extends Component {
                     Rock Island, Illinois, U.S.
                     <br />
                     <strong>Favs: </strong>
-                    Photoshop, Reactjs, Java
+                    Reactjs, Java, Photoshop
                   </p>
                   <p className="mt-text-paragraph align-justify">
                     Hello, I&apos;m Minh! I am an aspiring senior from Augustana College who is
