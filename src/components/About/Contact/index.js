@@ -4,8 +4,19 @@ import SocialButtons from 'components/Common/SocialButtons';
 class Contact extends Component {
   render() {
     return (
-      <section className="page-section bg-light mt-align-center" id="connect">
+      <section
+        className="page-section bg-light mt-align-center"
+        id="connect"
+        style={{ paddingBottom: '0' }}
+      >
         <div className="container">
+          <div className="row">
+            <div className="col-lg-3" />
+            <div className="col-lg-6">
+              <p className="mt-text-paragraph-bold">Looking forward to hearing from you.</p>
+            </div>
+            <div className="col-lg-3" />
+          </div>
           <div className="row">
             <div className="col-lg-3" />
             <div className="col-lg-6">
@@ -17,24 +28,17 @@ class Contact extends Component {
             <div className="col-lg-3" />
           </div>
           <div className="row">
-            <div className="col-lg-3" />
-            <div className="col-lg-6">
-              <p className="mt-text-paragraph-bold">Looking forward to hearing from you.</p>
-            </div>
-            <div className="col-lg-3" />
-          </div>
-          <div className="row">
             <div className="col-lg-12 ">
               <ul className="list-inline social-buttons">
-                <li className="list-inline-item">
-                  <i className="fas fa-sort-down" />
-                </li>
-                <li className="list-inline-item">
-                  <i className="fas fa-sort-down" />
-                </li>
-                <li className="list-inline-item">
-                  <i className="fas fa-sort-down" />
-                </li>
+                <p className="mt-text-paragraph">
+                  <li className="list-inline-item" style={{ margin: '10px' }}>
+                    <i className="fas fa-sort-down" />
+                  </li>
+                  Click Below
+                  <li className="list-inline-item" style={{ margin: '10px' }}>
+                    <i className="fas fa-sort-down" />
+                  </li>
+                </p>
               </ul>
             </div>
           </div>
