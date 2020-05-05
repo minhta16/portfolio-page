@@ -23,7 +23,7 @@ class GotItModal extends Component {
           questions.
         </p>
         <p>
-          In the 14 months internship, I collaborated with other software engineers and QA testers
+          In the 4 months internship, I collaborated with other software engineers and QA testers
           to implement features and, later on, set up the test automation framework for an
           unreleased product. I also took part in various training programs about test automation
           and big data and was a part of the team that won the second prize of Got It’s Test
