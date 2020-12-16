@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SocialButtons from 'components/Common/SocialButtons';
 
 class Contact extends Component {
   render() {

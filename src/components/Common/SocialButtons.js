@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default props => {
-  const { horizontal } = props;
+const SocialButtons = ({ horizontal }) => {
   return (
     <ul className="list-inline social-buttons">
       <li className="list-inline-item">
@@ -31,3 +31,9 @@ export default props => {
     </ul>
   );
 };
+
+SocialButtons.propTypes = {
+  horizontal: PropTypes.bool.isRequired,
+};
+
+export default SocialButtons;

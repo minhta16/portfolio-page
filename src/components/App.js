@@ -6,7 +6,16 @@ import Home from 'components/Home';
 import Footer from 'components/Common/Footer';
 import About from 'components/About';
 
-const routes = [{ url: '/home', component: Home }, { url: '/about', component: About }];
+const routes = [
+  {
+    url: '/home',
+    component: Home,
+  },
+  {
+    url: '/about',
+    component: About,
+  },
+];
 
 const App = () => {
   return (
