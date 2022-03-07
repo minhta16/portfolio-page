@@ -10,7 +10,7 @@ const Footer = () => (
         </div>
 
         <div className="col-md-12 align-items-center">
-          <span className="copyright">Copyright &copy; Minh Ta 2019</span>
+          <span className="copyright">Copyright &copy; Minh Ta 2022</span>
         </div>
       </div>
     </div>

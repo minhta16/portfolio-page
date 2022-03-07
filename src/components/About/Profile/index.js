@@ -61,30 +61,28 @@ class Profile extends Component {
                     Hanoi, Vietnam
                     <br />
                     <strong>Base: </strong>
-                    Rock Island, Illinois, U.S.
+                    Boston, MA
                     <br />
-                    <strong>Favs: </strong>
-                    Reactjs, ScikitLearn, Photoshop
+                    <strong>Love: </strong>
+                    Javascript, ScikitLearn, Photoshop
                   </p>
                   <p className="mt-text-paragraph align-justify">
-                    {`Hello, my name is Minh. I am an aspiring Software Developer who graduated 
-                    from Augustana College with a double major in Computer Science and Applied 
-                    Mathematics and a minor in Data Science. I can easily geek out when someone 
-                    mentions cutting-edge tech products, interesting ways to solve existing problems, 
-                    and UX design patterns. In the past few years, I have finished a software engineering 
-                    internship with Got It, Inc. Vietnam, a software developing internship with Augustana 
-                    IT Services, an SEO Specialist internship with Cloudburst Australia, and now I am a 
-                    proud Software Engineer for Aquent IT Solutions.`}
+                    Hello, my name is Minh, an aspiring Software Engineer at Author by Humana. I
+                    graduated from Augustana College with a double major in Computer Science and
+                    Applied Mathematics and a minor in Data Science. I can easily geek out when
+                    someone mentions cutting-edge technology, interesting ways to solve existing
+                    problems, and UX design patterns.
                   </p>
                   <p className="mt-text-paragraph align-justify">
-                    {`I am fascinated with how technology is changing rapidly and how it creates endless 
-                    possibilities for solving our simple yet ever-present problems. I am very thrilled 
-                    when it comes to UX Development, ML/AI, and IoT so that I can contribute to raising 
-                    our life quality.`}
+                    I am fascinated with how technology is changing rapidly and how it creates
+                    endless possibilities for solving our simple yet ever-present problems. I am
+                    very thrilled when it comes to ML/AI, UX Development, and IoT. It is amazing how
+                    these domains can rapidly change our life for the better.
                   </p>
                   <p className="mt-text-paragraph align-justify">
-                    {`In my free time, I enjoy taking photographs with my Minolta analog camera, hitting 
-                    notes with my guitar, and checking out amusing landmarks around the world.`}
+                    In my free time, I enjoy taking photographs with my Minolta analog camera,
+                    hitting notes with my guitar, and checking out amusing landmarks around the
+                    world.z
                   </p>
                 </div>
               </div>

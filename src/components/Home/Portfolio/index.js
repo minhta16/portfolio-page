@@ -5,20 +5,41 @@ import img3 from 'assets/img/portfolio/03-thumbnail.jpg';
 import img4 from 'assets/img/portfolio/04-thumbnail.jpg';
 import img5 from 'assets/img/portfolio/05-thumbnail.jpg';
 import img6 from 'assets/img/portfolio/06-thumbnail.jpg';
+import img7 from 'assets/img/portfolio/07-thumbnail.jpg';
+import img8 from 'assets/img/portfolio/08-thumbnail.jpg';
 import SisuModal from 'components/Common/Modal/SisuModal';
 import SwedishModal from 'components/Common/Modal/SwedishModal';
 import BookMarketModal from 'components/Common/Modal/BookMarketModal';
 import HomebaseModal from 'components/Common/Modal/HomebaseModal';
 import ChicagoModal from 'components/Common/Modal/ChicagoModal';
 import GotItModal from 'components/Common/Modal/GotItModal';
+import { HumanaModal } from 'components/Common/Modal/HumanaModal';
+import { AquentModal } from 'components/Common/Modal/AquentModal';
 import PortfolioList from './PortfolioList';
 
 const portfolioList = [
+  {
+    title: 'Author by Humana',
+    caption: 'Software Engineer 2',
+    src: img8,
+    modal: HumanaModal,
+    time: '2021-2022',
+    alt: 'Author by Humana logo',
+  },
+  {
+    title: 'Aquent IT Solutions',
+    caption: 'Software Developer',
+    src: img7,
+    modal: AquentModal,
+    time: '2020-2021',
+    alt: 'Aquent logo',
+  },
   {
     title: 'Got It, Inc.',
     caption: 'Software Engineer Internship',
     src: img6,
     modal: GotItModal,
+    time: '2020',
     alt: 'Got It logo',
   },
   {
@@ -26,6 +47,7 @@ const portfolioList = [
     caption: 'Data Model & Blog',
     src: img5,
     modal: ChicagoModal,
+    time: '2020',
     alt: 'Graph of chicago crime',
   },
   {
@@ -33,6 +55,7 @@ const portfolioList = [
     caption: 'Developer',
     src: img4,
     modal: HomebaseModal,
+    time: '2019',
     alt: 'homebase logo',
   },
   {
@@ -40,6 +63,7 @@ const portfolioList = [
     caption: 'Developer',
     src: img3,
     modal: BookMarketModal,
+    time: '2019',
     alt: 'Augie Book Market logo',
   },
   {
@@ -47,6 +71,7 @@ const portfolioList = [
     caption: 'Game Designer & Developer',
     src: img2,
     modal: SwedishModal,
+    time: '2018',
     alt: 'Swedish Immigration Trail welcome screen',
   },
   {
@@ -54,6 +79,7 @@ const portfolioList = [
     caption: 'Web Designer',
     src: img1,
     modal: SisuModal,
+    time: '2018',
     alt: 'Sisu Vina logo',
   },
 ];

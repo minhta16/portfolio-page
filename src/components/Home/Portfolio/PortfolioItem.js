@@ -28,6 +28,7 @@ class PortfolioItem extends Component {
         <div className="portfolio-caption">
           <h5>{item.title}</h5>
           <p className="text-muted">{item.caption}</p>
+          <p className="text-muted">{item.time}</p>
         </div>
         <item.modal isOpen={isOpen} toggle={this.toggle} />
       </div>
