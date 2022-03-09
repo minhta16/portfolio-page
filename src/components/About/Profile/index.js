@@ -82,7 +82,7 @@ class Profile extends Component {
                   <p className="mt-text-paragraph align-justify">
                     In my free time, I enjoy taking photographs with my Minolta analog camera,
                     hitting notes with my guitar, and checking out amusing landmarks around the
-                    world.z
+                    world.
                   </p>
                 </div>
               </div>
