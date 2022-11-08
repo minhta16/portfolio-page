@@ -14,20 +14,20 @@ class GotItModal extends Component {
         </p>
         <p className="item-intro text-muted">May 2019 - August 2019</p>
         <p>
-          In the summer of 2019, while I am in Vietnam, I took the opportunity to apply for and work
+          {`In the summer of 2019, while I am in Vietnam, I took the opportunity to apply for and work
           as a Software Engineer Intern at a branch of Got It in Vietnam. The Silicon Valley-based
-          startup’s vision is to spread knowledge and to make professional tasks easier with the
-          help of Artificial Intelligent. Got It’s product line consists of PhotoStudy, an AI-based
+          startup's vision is to spread knowledge and to make professional tasks easier with the
+          help of Artificial Intelligent. Got It's product line consists of PhotoStudy, an AI-based
           mobile app to help students with their homework, Natural Language to SQL, a tool to
           translate our language to SQL queries, and Excelchat, a tutoring service for Excel
-          questions.
+          questions.`}
         </p>
         <p>
-          In the 4 months internship, I collaborated with other software engineers and QA testers
+          {`In the 4 months internship, I collaborated with other software engineers and QA testers
           to implement features and, later on, set up the test automation framework for an
           unreleased product. I also took part in various training programs about test automation
-          and big data and was a part of the team that won the second prize of Got It’s Test
-          Automation Hackathon.
+          and big data and was a part of the team that won the second prize of Got It's Test
+          Automation Hackathon.`}
         </p>
         <Image className="img-fluid d-block mx-auto" src={hackathonImg} alt="Hackaton winners" />
         <p className="item-intro text-muted">Hackathon winners. Source: Got It, inc. Medium</p>

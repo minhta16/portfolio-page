@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PortfolioItem from './PortfolioItem';
+import { PortfolioItem } from './PortfolioItem';
 
 const PortfolioList = props => {
   const { items } = props;

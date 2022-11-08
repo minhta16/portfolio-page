@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SocialButtons = ({ horizontal }) => {
+const SocialButtons = () => {
   return (
     <ul className="list-inline social-buttons">
       <li className="list-inline-item">
-        <a href="mailto: minhta16@augustana.edu" rel="noopener noreferrer" target="_blank">
+        <a href="mailto: minhta.dev@gmail.com" rel="noopener noreferrer" target="_blank">
           <i className="fa fa-envelope" />
         </a>
       </li>
@@ -15,11 +14,7 @@ const SocialButtons = ({ horizontal }) => {
         </a>
       </li>
       <li className="list-inline-item">
-        <a
-          href="https://www.linkedin.com/in/minh-ta-349823131/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/minhta16" rel="noopener noreferrer" target="_blank">
           <i className="fab fa-linkedin-in" />
         </a>
       </li>
@@ -30,10 +25,6 @@ const SocialButtons = ({ horizontal }) => {
       </li>
     </ul>
   );
-};
-
-SocialButtons.propTypes = {
-  horizontal: PropTypes.bool.isRequired,
 };
 
 export default SocialButtons;

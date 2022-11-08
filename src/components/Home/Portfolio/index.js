@@ -13,8 +13,6 @@ import BookMarketModal from 'components/Common/Modal/BookMarketModal';
 import HomebaseModal from 'components/Common/Modal/HomebaseModal';
 import ChicagoModal from 'components/Common/Modal/ChicagoModal';
 import GotItModal from 'components/Common/Modal/GotItModal';
-import { HumanaModal } from 'components/Common/Modal/HumanaModal';
-import { AquentModal } from 'components/Common/Modal/AquentModal';
 import PortfolioList from './PortfolioList';
 
 const portfolioList = [
@@ -22,7 +20,7 @@ const portfolioList = [
     title: 'Author by Humana',
     caption: 'Software Engineer 2',
     src: img8,
-    modal: HumanaModal,
+    // modal: HumanaModal,
     time: '2021-2022',
     alt: 'Author by Humana logo',
   },
@@ -30,7 +28,7 @@ const portfolioList = [
     title: 'Aquent IT Solutions',
     caption: 'Software Developer',
     src: img7,
-    modal: AquentModal,
+    // modal: AquentModal,
     time: '2020-2021',
     alt: 'Aquent logo',
   },
